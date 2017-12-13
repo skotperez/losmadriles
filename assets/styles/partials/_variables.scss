@@ -6,23 +6,20 @@
 // @include fontface('FONT_NAME', 'assets/fonts/', 'FONT_FAMILY');
 
 // Colors
-$brand-primary: #2b3423;
-$brand-primary-transparent: rgba(43,52,35,0.6);
-$body-bg: #eee7d4;
+$brand-primary: #21403f;
+$brand-primary-transparent: rgba(33,64,63,0.6);
+$body-bg: #b3be98;
 $text-color: $brand-primary;
 $link-color: $brand-primary;
 $link-hover-color: #000;
 
 $active-color: $link-hover-color;
 
-$barw-bg: #fff;
-$barw-fg: $brand-primary;
-
-$bargd-bg: $brand-primary;
-$bargd-fg: #fff;
+$bargd-bg: #3c5e5e;
+$bargd-fg: #dcd6a3;
 
 $bargl-bg: #e2dbb5;
 $bargl-fg: $brand-primary;
 
 // Sizes
-$font-base-size: 14px;
+$font-base-size: 13px;

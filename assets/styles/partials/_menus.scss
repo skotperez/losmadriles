@@ -2,20 +2,30 @@
    Menus
    ========================================================================== */
 
+.navbar-nav {
+	text-transform: uppercase;
+	font-weight: 700;
+}
 .site-header {
-	.current-menu-item {
-		color: $active-color;
-		text-decoration: underline;
+	.navbar-collapse {
+		padding: 0;
 	}
-	.bargl {
-		font-family: 'Museo';
-		font-weight: 700;
-		.navbar-collapse {
-			text-transform: uppercase;
+	.nav {
+		li {
+			a {
+				padding: 10px 0;
+				margin-right: 30px;
+				line-height: $font-base-size;
+			}
 		}
 	}
 	.navbar-fixed-top {
 		z-index: 2030;
+	}
+	.form-control {
+		height: auto;
+		padding: 0 10px;
+		margin: 7px 0;
 	}
 }
 .post-type-archive-activity,

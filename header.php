@@ -25,30 +25,18 @@
 	<![endif]-->
 
 	<header id="masthead" class="site-header" role="banner">
-		<div id="ante" class="barw">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="pull-right"><img src="<?php echo MB_BLOGTHEME; ?>/assets/images/logo.madrid.png" alt="Ayuntamiento de Madrid" /></div>
-						<div class="barw-brand"><?php echo MB_BLOGDESC; ?></div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div id="pre" class="bargd">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6">
-						<a href="<?php echo esc_url( home_url( '/' )); ?>"><img src="<?php echo MB_BLOGTHEME; ?>/assets/images/logo.huertos.madrid.png" alt="<?php echo MB_BLOGNAME; ?>" /></a>
-					</div>
-					<div class="col-sm-3 col-sm-offset-3 hidden-xs">
-						<?php $search_label = __("Search gardens","_mbbasetheme");
-						_mbbasetheme_get_searchform('huertos','pull-right',false,$search_label); ?>
+					<div class="col-sm-12">
+						<div class="brand notext">
+							<a class="text-center" href="<?php echo esc_url( home_url( '/' )); ?>"><?php echo MB_BLOGNAME; ?></a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<nav id="pre-menu" class="navbar navbar-default bargl" role="navigation">
+		<nav id="pre-menu" class="navbar navbar-default" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#pre-menu-collapse">
@@ -69,6 +57,9 @@
 						);
 						wp_nav_menu( $args );
 					} ?>
+						<?php $label = '<i class="fa fa-search"></i> ';
+						$placeholder = __('Search','_mbbasetheme');
+						_mbbasetheme_get_searchform('huertos','navbar-form navbar-right',false,$label,$placeholder); ?>
 				</div>
 			</div>
 		</nav>

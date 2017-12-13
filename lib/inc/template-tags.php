@@ -155,21 +155,23 @@ if ( ! function_exists( '_mbbasetheme_get_searchform' ) ) :
  *
  * @return	search form HTML code
  */
-function _mbbasetheme_get_searchform($post_type,$form_classes,$submit_btn,$search_label) {
+function _mbbasetheme_get_searchform($post_type,$form_classes,$submit_btn,$search_label,$search_placeholder) {
 	
 	$filters_out = ( $post_type != false ) ? '<input type="hidden" name="post_type" value="'.$post_type.'" />' : '';
 	$submit_out = ( $submit_btn != false ) ? '<input type="submit" id="searchsubmit" value="'.__('Search','_mbbasetheme').'" />' : '';
 
+	$label_out = ( $search_label == false )  ? '<label class="sr-only" for="s">'.__('Search: ','_mbbasetheme').'</label>' : '<label for="s">'.$search_label.'</label>';
+	$placeholder_out = ( $search_placeholder == false )  ? '' : 'placeholder="'.$search_placeholder.'" ';
 	if ( is_search() ) {
 		$active_class = ' searched';
 		$search_label = __('Search results: ','_mbbasetheme').' '.get_search_query();
 	} else { $active_class = ''; }
 	$form_out = '
 	<form method="get" id="searchform" class="'.$form_classes.'" action="'.get_home_url().'/" role="search">
-	<div class="form-group">
-		'.$filters_out.'
-		<label class="sr-only" for="s">'.$search_label.'</label>
-		<input class="form-control input-sm'.$active_class.'" type="text" value="" name="s" id="s" placeholder="'.$search_label.'" />
+	<div class="form-group">'
+		.$filters_out
+		.$label_out.
+		'<input class="form-control input-sm'.$active_class.'" type="text" value="" name="s" id="s" '.$placeholder_out.'/>
 		'.$submit_out.'
 	</div>
 	</form>

@@ -15,9 +15,10 @@
    General
    ========================================================================== */
 
-.barw {
-	background-color: $barw-bg;
-	color: $barw-fg;
+.notext {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .bargd {
 	.row {
