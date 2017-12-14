@@ -6,16 +6,17 @@
 	margin-top: 18px;
 	#epi-menu { padding: 10px 0 0 0; }
 	#epi-meta {
+		text-align: center;
 		padding-bottom: 10px;
-		.space { padding-top: 18px;}
+		.space { padding-bottom: 36px;}
+		a {
+			color: inherit; text-decoration: underline;
+			&:hover { text-decoration: none; }
+		}
 	}
-	#credits-widgets {
-		a { text-decoration: underline;}
-	}
-	background-color: $bargl-bg;
-	color: $bargl-fg;
-	.barw {
-		padding: 10px 0 0 0;
-		&-brand { line-height: 30px; }
+	background: {
+		repeat: repeat-x repeat-y;
+		position: top left;
+		image: url(assets/images/bg.pattern.png);
 	}
 }

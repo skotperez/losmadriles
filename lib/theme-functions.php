@@ -61,20 +61,10 @@ function mb_widgets_init() {
 		'name'          => __( 'Footer Widget Area', '_mbbasetheme' ),
 		'id'            => 'epi-widgets',
 		'description'   => __( 'Add some content to the footer, under the menu.', '_mbbasetheme' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s space">',
-		'after_widget'  => '</div>',
+		'before_widget' => '<div id="%1$s" class="widget %2$s space col-sm-10 col-sm-offset-1">',
+		'after_widget'  => '</div><div class="clearfix"></div>',
 		'before_title'  => '<strong class="epi-widget-title">',
 		'after_title'   => '</strong>',
-	) );
-	// Footer Widget Area
-	register_sidebar( array(
-		'name'          => __( 'Credits Widget Area', '_mbbasetheme' ),
-		'id'            => 'credits-widgets',
-		'description'   => __( 'dd two widget for the credit area in the footer', '_mbbasetheme' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s col-sm-6">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="credits-widget-title">',
-		'after_title'   => '</h3>',
 	) );
 }
 

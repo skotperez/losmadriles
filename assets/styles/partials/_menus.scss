@@ -6,6 +6,12 @@
 	text-transform: uppercase;
 	font-weight: 700;
 }
+.navbar-center {
+	float: none;
+	margin: 0 auto;
+	display: table;
+	table-layout: fixed;
+}
 .site-header {
 	.navbar-collapse {
 		padding: 0;
@@ -28,10 +34,6 @@
 		margin: 7px 0;
 	}
 }
-.post-type-archive-activity,
-.single-activity,
-.post-type-archive-download,
-.single-download,
 .post-type-archive-new,
 .single-new {
 	.menu-blog {
@@ -39,17 +41,9 @@
 		text-decoration: underline;
 	}
 }
-.single-garden {
-	.menu-garden {
-		color: $active-color;
-		text-decoration: underline;
-	}
-}
 .site-footer {
 	.navbar {
 		margin-bottom: 10px;
-		font-weight: 700;
 		.navbar-collapse { margin-left: -30px; }
-		.navbar-brand { font-size: inherit; font-weight: normal; }
 	}
 }

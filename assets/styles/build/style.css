@@ -59,11 +59,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
   padding: 10px 0;
 }
 
-.bargl {
-  background-color: #e2dbb5;
-  color: #21403f;
-}
-
 /* ==========================================================================
    Links
    ========================================================================== */
@@ -174,26 +169,26 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 .site-footer {
   margin-top: 18px;
-  background-color: #e2dbb5;
-  color: #21403f;
+  background-repeat: repeat-x repeat-y;
+  background-position: top left;
+  background-image: url(assets/images/bg.pattern.png);
 }
 .site-footer #epi-menu {
   padding: 10px 0 0 0;
 }
 .site-footer #epi-meta {
+  text-align: center;
   padding-bottom: 10px;
 }
 .site-footer #epi-meta .space {
-  padding-top: 18px;
+  padding-bottom: 36px;
 }
-.site-footer #credits-widgets a {
+.site-footer #epi-meta a {
+  color: inherit;
   text-decoration: underline;
 }
-.site-footer .barw {
-  padding: 10px 0 0 0;
-}
-.site-footer .barw-brand {
-  line-height: 30px;
+.site-footer #epi-meta a:hover {
+  text-decoration: none;
 }
 
 /* ==========================================================================
@@ -202,6 +197,13 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-nav {
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.navbar-center {
+  float: none;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
 }
 
 .site-header .navbar-collapse {
@@ -221,31 +223,17 @@ h1, h2, h3, h4, h5, h6 {
   margin: 7px 0;
 }
 
-.post-type-archive-activity .menu-blog,
-.single-activity .menu-blog,
-.post-type-archive-download .menu-blog,
-.single-download .menu-blog,
 .post-type-archive-new .menu-blog,
 .single-new .menu-blog {
-  color: #000;
-  text-decoration: underline;
-}
-
-.single-garden .menu-garden {
-  color: #000;
+  color: #070e0d;
   text-decoration: underline;
 }
 
 .site-footer .navbar {
   margin-bottom: 10px;
-  font-weight: 700;
 }
 .site-footer .navbar .navbar-collapse {
   margin-left: -30px;
-}
-.site-footer .navbar .navbar-brand {
-  font-size: inherit;
-  font-weight: normal;
 }
 
 /* ==========================================================================
