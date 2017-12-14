@@ -3,15 +3,48 @@
    ========================================================================== */
 
 .carousel-caption-inner {
-	font: 700 $font-base-size 'Museo', sans-serif;
-	padding: 50px;
+	padding: 15px;
+	color: $bargd-fg;
+	font-size: $font-size-large;
 	h3 {
-		font-size: $font-base-size;
+		font-size: 21px;
+		font-weight: normal;
 		text-transform: uppercase;
 		&:before, &:after { content: '·'; }
-
 	}
+}
+.carousel-caption {
+	padding-bottom: 50px;
 }
 .carousel-caption-bg {
 	background-color: $brand-primary-transparent;
+}
+.carousel-caption-sides {
+	&:before, &:after {
+		width: 0px;
+		height: 0px;
+		border-top: {
+			color: $brand-primary-transparent;
+			style: solid;
+		}
+		border-bottom: {
+			color: $brand-primary-transparent;
+			style: solid;
+		}
+		content: '';
+		position: absolute;
+		top: 20px;
+	}
+	&:before {
+		border-left: 30px solid transparent;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+		left: -30px;
+	}
+	&:after {
+		border-right: 30px solid transparent;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		right: -30px;
+	}
 }

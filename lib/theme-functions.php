@@ -155,24 +155,16 @@ function mb_scripts() {
 	}
 
 	if ( !is_admin() ) {
-	wp_dequeue_script('jquery');
-	wp_dequeue_script('jquery-core');
-	wp_dequeue_script('jquery-migrate');
-	wp_enqueue_script('jquery', false, array(), false, true);
-	wp_enqueue_script('jquery-core', false, array(), false, true);
-	wp_enqueue_script('jquery-migrate', false, array(), false, true);
-//		wp_enqueue_script( 'jquery' );
-//		wp_enqueue_script( 'customplugins', get_template_directory_uri() . '/assets/js/plugins.min.js', array('wpmap-js'), NULL, true );
-		wp_enqueue_script( 'customscripts', get_template_directory_uri() . '/assets/js/main.min.js', array('jquery'), NULL, true );
+		// wp_enqueue_script( 'jquery' );
+		wp_dequeue_script('jquery');
+		wp_dequeue_script('jquery-core');
+		wp_dequeue_script('jquery-migrate');
+		wp_enqueue_script('jquery', false, array(), false, true);
+		wp_enqueue_script('jquery-core', false, array(), false, true);
+		wp_enqueue_script('jquery-migrate', false, array(), false, true);
+		wp_enqueue_script( 'customscripts', get_template_directory_uri() . '/assets/js/main.min.js', array('jquery','actual-js'), NULL, true );
 		wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.min.js', array('jquery'), NULL, true );
-	}
-	if ( is_page_template('templates/page-gardens.php') ) {
-		wp_enqueue_script( 'isotope-js', get_template_directory_uri() . '/assets/isotope/isotope.pkgd.min.js', array('jquery'), '3.0.4', true );
-		wp_enqueue_script( 'page-gardens-js', get_template_directory_uri() . '/assets/js/page-gardens.min.js', array('isotope-js'), NULL, true );
-	} elseif ( is_page_template('templates/page-map.php') ) {
-		wp_enqueue_script( 'plugin-wpmap-additional', get_template_directory_uri() . '/assets/js/plugin-wpmap.min.js', array('wpmap-js'), NULL, true );
-	} elseif ( is_page_template('templates/page-faqs.php') ) {
-//		wp_enqueue_script( 'page-faqs-js', get_template_directory_uri() . '/assets/js/page-faqs.min.js', array('jquery'), NULL, true );
+		wp_enqueue_script( 'actual-js', get_template_directory_uri() . '/assets/jquery.actual/jquery.actual.min.js', array('jquery'), NULL, true );
 	}
 }
 /**

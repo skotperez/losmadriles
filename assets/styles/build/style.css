@@ -147,6 +147,12 @@ h1, h2, h3, h4, h5, h6 {
 /* ==========================================================================
    Header
    ========================================================================== */
+.site-header {
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 2030;
+  top: 0;
+}
 .site-header .bargd {
   height: 128px;
   background-repeat: no-repeat;
@@ -378,19 +384,49 @@ object {
    Carousel slides
    ========================================================================== */
 .carousel-caption-inner {
-  font: 700 13px "Museo", sans-serif;
-  padding: 50px;
+  padding: 15px;
+  color: #dcd6a3;
+  font-size: 16.25px;
 }
 .carousel-caption-inner h3 {
-  font-size: 13px;
+  font-size: 21px;
+  font-weight: normal;
   text-transform: uppercase;
 }
 .carousel-caption-inner h3:before, .carousel-caption-inner h3:after {
   content: '·';
 }
 
+.carousel-caption {
+  padding-bottom: 50px;
+}
+
 .carousel-caption-bg {
   background-color: rgba(33, 64, 63, 0.6);
+}
+
+.carousel-caption-sides:before, .carousel-caption-sides:after {
+  width: 0px;
+  height: 0px;
+  border-top-color: rgba(33, 64, 63, 0.6);
+  border-top-style: solid;
+  border-bottom-color: rgba(33, 64, 63, 0.6);
+  border-bottom-style: solid;
+  content: '';
+  position: absolute;
+  top: 20px;
+}
+.carousel-caption-sides:before {
+  border-left: 30px solid transparent;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  left: -30px;
+}
+.carousel-caption-sides:after {
+  border-right: 30px solid transparent;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  right: -30px;
 }
 
 /* ==========================================================================

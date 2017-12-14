@@ -3,6 +3,10 @@
    ========================================================================== */
 
 .site-header {
+	position: sticky;
+	position: -webkit-sticky;
+	z-index: 2030;
+	top: 0;
 	.bargd {
 		height: 128px;
 		background: {

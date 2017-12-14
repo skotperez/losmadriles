@@ -1,22 +1,15 @@
 (function($) {
 
-	// fix header when scroll down
-	var win = $(window);
-	var offset = Number($('#ante').height());
-	var offsetFixed = Number($('#pre').height());
-
-	win.scroll(function () {
-		if ( win.scrollTop() > offset ) {
-			$('#pre').addClass('navbar-fixed-top');
-			$('#pre-menu').addClass('navbar-fixed-top');
-			$('#pre-menu').css({top: offsetFixed+'px'});
-			$('#content').css({'padding-top': offsetFixed+'px'});
-		} else if ( win.scrollTop() < offset && $('#pre').hasClass('navbar-fixed-top') ) {
-			$('#pre').removeClass('navbar-fixed-top');
-			$('#pre-menu').removeClass('navbar-fixed-top');
-			$('#pre-menu').css({top: '0'});
-			$('#content').css({'padding-top': '0'});
-		}
+	$(document).ready(function(){
+		var count=0;
+		var styleOutput='';
+		$('.carousel-caption-bg').each(function() {
+			count++;
+			$(this).parent().addClass('carousel-caption-sides carousel-caption-sides-'+count);
+			var bgHeight = $('.carousel-caption-sides-'+count+' .carousel-caption-bg').actual('outerHeight');
+			styleOutput += '.carousel-caption-sides-'+count+':before { border-top-width:'+bgHeight/2+'px; border-bottom-width:'+bgHeight/2+'px; }.carousel-caption-sides-'+count+':after { border-top-width:'+bgHeight/2+'px; border-bottom-width:'+bgHeight/2+'px; }';
+		});
+		$('<style>'+styleOutput+'</style>').appendTo('body');
 	});
 
 })(jQuery);
