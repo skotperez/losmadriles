@@ -46,7 +46,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
    General
    ========================================================================== */
 .notext {
-  text-indent: 100%;
+  text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -398,7 +398,8 @@ object {
 }
 
 .carousel-caption {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
+  text-shadow: none;
 }
 
 .carousel-caption-bg {
@@ -432,20 +433,14 @@ object {
 /* ==========================================================================
    Home Page Template
    ========================================================================== */
-body.home h2,
-body.page-template-default h2,
-body.page-template-page-map h2 {
-  font: 700 14px "Museo", sans-serif;
+body.home h2 {
+  font: 700 16px "Museo", sans-serif;
   text-transform: uppercase;
   text-decoration: underline;
   margin-top: 14px;
   margin-bottom: 14px;
 }
-body.home h2:before, body.home h2:after,
-body.page-template-default h2:before,
-body.page-template-default h2:after,
-body.page-template-page-map h2:before,
-body.page-template-page-map h2:after {
+body.home h2:before, body.home h2:after {
   content: '·';
 }
 
@@ -469,6 +464,52 @@ body.page-template-default h1 {
 }
 body.page-template-default h1:before, body.page-template-default h1:after {
   content: '·';
+}
+body.page-template-default h2 {
+  font: 700 14px "Museo", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  background-color: #e5dfa9;
+  display: inline-block;
+  padding: 2px 5px;
+  position: relative;
+  line-height: 18px;
+}
+body.page-template-default h2:before, body.page-template-default h2:after {
+  content: '·';
+}
+body.page-template-default h2:before, body.page-template-default h2:after {
+  width: 0px;
+  height: 0px;
+  border-top-color: #e5dfa9;
+  border-top-style: solid;
+  border-top-width: 11px;
+  border-bottom-color: #e5dfa9;
+  border-bottom-style: solid;
+  border-bottom-width: 11px;
+  content: '';
+  position: absolute;
+  top: 0px;
+}
+body.page-template-default h2:before {
+  border-left: 5px solid transparent;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  left: -5px;
+}
+body.page-template-default h2:after {
+  border-right: 5px solid transparent;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  right: -5px;
+}
+body.page-template-default .entry-content-text {
+  text-align: center;
+}
+body.page-template-default .entry-content-text p, body.page-template-default .entry-content-text ul, body.page-template-default .entry-content-text ol, body.page-template-default .entry-content-text dl, body.page-template-default .entry-content-text blockquote {
+  text-align: left;
 }
 
 body.search h1,

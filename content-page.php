@@ -7,17 +7,20 @@
 
 $img_size = 'post-thumbnail';
 if ( has_post_thumbnail() ) {
-	$loop_image = '<aside class="col-sm-4"><figure class="'.$loop_prefix.'-img">'.get_the_post_thumbnail($post->ID,$img_size,array('class' => 'img-responsive')).'</figure></aside>';
+	$loop_image = '<aside class="col-sm-4 entry-content-img"><figure class="'.$loop_prefix.'-img">'.get_the_post_thumbnail($post->ID,$img_size,array('class' => 'img-responsive')).'</figure></aside>';
 } else {
 	$loop_image = "";
 }
 
-$loop_classes = ( is_page_template('templates/page-map.php') ) ? 'col-sm-12' : 'col-sm-8' ;
+$loop_classes = ( is_page_template('templates/page-map.php') ) ? 'col-sm-12' : 'col-sm-8 entry-content-text' ;
+
+$show_tit = get_post_meta($post->ID,'_page_show_tit',true);
+$tit_class = ( $show_tit ) ? '' : ' notext';
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('block container'); ?>>
 	<header class="row">
-		<?php the_title( '<h1 class="col-sm-12 entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="col-sm-12 entry-title'.$tit_class.'">', '</h1>' ); ?>
 	</header>
 	<div class="row entry-content">
 	<div class="<?php echo $loop_classes ?>">
