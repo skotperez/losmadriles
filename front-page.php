@@ -71,20 +71,6 @@ get_header(); ?>
 			<header class="row"><h2 class="col-sm-12"><?php _e('Map of community gardens in Madrid','_mbbasetheme') ?></h2></header>
 			<div class="row">
 				<div class="col-sm-12">
-					<?php $args = array(
-						'post_type' => 'garden',
-						'post_status' => "publish",
-						'layers_by' => "post_type",
-						'layers' => "garden",
-						'colors' => "#ff0",
-						'icons' => "",
-						'marker_type' => 'icon',
-						//'marker_radius' => 10,
-						//'marker_opacity' => 0.5,
-						//'marker_fillOpacity' => 0.5,
-						'popup_text' => 'excerpt'
-					);
-					wpmap_showmap($args); ?>
 				</div>
 			</div>
 		</section><!-- #map -->

@@ -15,7 +15,7 @@ if ( has_post_thumbnail() ) {
 $loop_classes = ( is_page_template('templates/page-map.php') ) ? 'col-sm-12' : 'col-sm-8 entry-content-text' ;
 
 $show_tit = get_post_meta($post->ID,'_page_show_tit',true);
-$tit_class = ( $show_tit ) ? '' : ' notext';
+$tit_class = ( $show_tit ) ? '' : ' notext notext-extra';
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('block container'); ?>>

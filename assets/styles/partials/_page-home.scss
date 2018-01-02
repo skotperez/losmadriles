@@ -2,7 +2,8 @@
    Home Page Template
    ========================================================================== */
 
-body.home {
+body.home,
+body.page-template-page-map {
 	h2 {
 		@include sec-tit(16px,underline,14px,14px);
 	}
@@ -58,6 +59,42 @@ body.page-template-default {
 		p,ul,ol,dl,blockquote { text-align: left; }
 	}
 }
+body.page-template-page-map {
+	.map {
+		margin-bottom: 28px;
+		.map-img {
+			width: 262px;
+			height: 262px;
+			border-radius: 131px;
+			-webkit-border-radius: 131px;
+			-moz-border-radius: 131px;
+			img {
+				opacity: 0;
+				filter: alpha(opacity=0);	
+			}
+		}
+		.map-heading {
+			text-align: center;
+			.map-tit, .map-date {
+				font: 700 16px 'Lato',sans-serif;
+				text-transform: uppercase;
+				margin: 0;
+			}
+			margin:{
+				top: 14px;
+				bottom: 14px;
+			}
+			.map-tit {
+				text-decoration: underline;
+			}
+		}
+		.map-file {
+			margin-top: 14px;
+			text-align: center;
+		}
+	}
+}
+
 body.search,
 body.post-type-archive {
 	h1 {

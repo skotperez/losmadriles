@@ -51,6 +51,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
   overflow: hidden;
 }
 
+.notext-extra {
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+}
+
 .bargd {
   background-color: #3c5e5e;
   color: #dcd6a3;
@@ -286,7 +293,7 @@ object {
 .single-new .entry-subtitle,
 .single-download .entry-subtitle,
 .single-activity .entry-subtitle {
-  font: 700 14px "Museo", sans-serif;
+  font: 700 14px sans-serif;
   text-transform: uppercase;
   text-decoration: underline;
   margin-top: 0;
@@ -433,19 +440,22 @@ object {
 /* ==========================================================================
    Home Page Template
    ========================================================================== */
-body.home h2 {
-  font: 700 16px "Museo", sans-serif;
+body.home h2,
+body.page-template-page-map h2 {
+  font: 700 16px sans-serif;
   text-transform: uppercase;
   text-decoration: underline;
   margin-top: 14px;
   margin-bottom: 14px;
 }
-body.home h2:before, body.home h2:after {
+body.home h2:before, body.home h2:after,
+body.page-template-page-map h2:before,
+body.page-template-page-map h2:after {
   content: '·';
 }
 
 body.page-template-page-blog h2 {
-  font: 700 16px "Museo", sans-serif;
+  font: 700 16px sans-serif;
   text-transform: uppercase;
   text-decoration: underline;
   margin-top: 0;
@@ -456,7 +466,7 @@ body.page-template-page-blog h2:before, body.page-template-page-blog h2:after {
 }
 
 body.page-template-default h1 {
-  font: 700 16px "Museo", sans-serif;
+  font: 700 16px sans-serif;
   text-transform: uppercase;
   text-decoration: underline;
   margin-top: 14px;
@@ -466,7 +476,7 @@ body.page-template-default h1:before, body.page-template-default h1:after {
   content: '·';
 }
 body.page-template-default h2 {
-  font: 700 14px "Museo", sans-serif;
+  font: 700 14px sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   margin-top: 14px;
@@ -512,9 +522,41 @@ body.page-template-default .entry-content-text p, body.page-template-default .en
   text-align: left;
 }
 
+body.page-template-page-map .map {
+  margin-bottom: 28px;
+}
+body.page-template-page-map .map .map-img {
+  width: 262px;
+  height: 262px;
+  border-radius: 131px;
+  -webkit-border-radius: 131px;
+  -moz-border-radius: 131px;
+}
+body.page-template-page-map .map .map-img img {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+body.page-template-page-map .map .map-heading {
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+body.page-template-page-map .map .map-heading .map-tit, body.page-template-page-map .map .map-heading .map-date {
+  font: 700 16px 'Lato',sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+body.page-template-page-map .map .map-heading .map-tit {
+  text-decoration: underline;
+}
+body.page-template-page-map .map .map-file {
+  margin-top: 14px;
+  text-align: center;
+}
+
 body.search h1,
 body.post-type-archive h1 {
-  font: 700 16px "Museo", sans-serif;
+  font: 700 16px sans-serif;
   text-transform: uppercase;
   text-decoration: underline;
   margin-top: 0px;
@@ -666,7 +708,7 @@ body.page-template-page-gardens .garden-filters {
 }
 body.search .garden-filter-tit,
 body.page-template-page-gardens .garden-filter-tit {
-  font: 700 16px "Museo", sans-serif;
+  font: 700 16px sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   margin-top: 0;
@@ -716,7 +758,7 @@ body.page-template-page-faqs .subpage {
   padding-top: 20px;
 }
 body.page-template-page-faqs h1.parent-tit {
-  font: 700 16px "Museo", sans-serif;
+  font: 700 16px sans-serif;
   text-transform: uppercase;
   text-decoration: underline;
   margin-top: 0;
@@ -726,7 +768,7 @@ body.page-template-page-faqs h1.parent-tit:before, body.page-template-page-faqs 
   content: '·';
 }
 body.page-template-page-faqs h2.child-tit {
-  font: 700 14px "Museo", sans-serif;
+  font: 700 14px sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   margin-top: 0;
