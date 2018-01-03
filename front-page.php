@@ -64,16 +64,21 @@ get_header(); ?>
 		</section><!-- #gardens -->
 	<?php endif;
 
-	// MAP
-	////
+	// THIS PAGE CONTENT
+	while ( have_posts() ) : the_post();
+	//	$the_content = get_the_content();
+		if ( get_the_content() != '' ) {
 	?>
-		<section id="garden-map" class="block container">
-			<header class="row"><h2 class="col-sm-12"><?php _e('Map of community gardens in Madrid','_mbbasetheme') ?></h2></header>
+		<section class="block container">
 			<div class="row">
 				<div class="col-sm-12">
+					<?php the_content(); ?>
 				</div>
 			</div>
-		</section><!-- #map -->
+		</section>
+
+	<?php 	}
+	endwhile; // end of the loop. ?>
 
 </main><!-- #main -->
 
