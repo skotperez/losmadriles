@@ -38,7 +38,7 @@
 
 /* H2 */
 @mixin sec-tit($font-size,$text-decoration,$margin-top,$margin-bottom) {
-	font: 700 $font-size sans-serif;
+	font: 700 $font-size 'Lato',sans-serif;
 	text-transform: uppercase;
 	text-decoration: $text-decoration;
 	&:before, &:after { content: '·'; }

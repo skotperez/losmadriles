@@ -24,10 +24,7 @@ object {
 }
 .wp-audio-shortcode { margin-bottom: 1em; }
 
-.single-garden,
-.single-new,
-.single-download,
-.single-activity {
+.single-new {
 	.entry-title {
 		font: {
 			family: 'Lato',sans-serif;
@@ -46,61 +43,9 @@ object {
 	.entry-footer {
 		margin-top: 20px;
 	}
-
-}
-.single-garden {
-	dl.entry-meta {
-		dd {
-			margin-bottom: 9px
-		}
-		.garden-address {
-			display: block;
-		}
-		.garden-district {
-			border: 1px solid;
-			padding: 0 3px;
-
-		}
-		p { margin: 0; }
-	}
-	.equipment {
-		text-align: center;
-		vertical-align: top;
-		width: 120px;
-		margin-bottom: 9px;
-		&-label {
-			margin-top: 5px;
-			line-height: 1.1em;
-			text-transform: uppercase;
-		}
-	}
-}
-.single-new,
-.single-download,
-.single-activity {
 	.entry-meta {
 		margin-bottom: 1em;
 		a { font-weight: 700; }
 		.updated-on { font-style: italic; }
-	}
-}
-.single-download {
-	.download-file {
-		margin-bottom: 1em;
-		text-align: center;
-		a {
-			display: inline-block;
-			background-color: $brand-primary-transparent;
-			color: #fff;
-			padding: 40px 30px;
-			@include border-radius(55px,55px,55px,55px);
-			&:hover { background-color: $brand-primary; }
-		}
-	}
-}
-.single-activity {
-	.actividad {
-		#map { height: 300px; margin-bottom: 1em; }
-		&-org-i { height: 26px; width: auto; vertical-align: bottom; }
 	}
 }

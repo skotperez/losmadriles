@@ -52,11 +52,21 @@ img {
    Typography
    ========================================================================== */
 
-.hentry h3 {
-	font-size: $font-base-size; text-transform: uppercase; text-decoration: underline;
-}
-h4 { }
+.hentry {
+	h3 {
+		font-size: $font-base-size; text-transform: uppercase; text-decoration: underline;
+	}
+	h2 {
+		font: {
+			family: 'Lato',sans-serif;
+			weight: 700;
+			size: 18px;
+		}
+		line-height: 1.1em;
+		text-transform: uppercase;
+	}
 
+}
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }

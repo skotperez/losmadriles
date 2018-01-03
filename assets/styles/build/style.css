@@ -87,6 +87,13 @@ img {
   text-transform: uppercase;
   text-decoration: underline;
 }
+.hentry h2 {
+  font-family: 'Lato',sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1em;
+  text-transform: uppercase;
+}
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
@@ -279,112 +286,37 @@ object {
   margin-bottom: 1em;
 }
 
-.single-garden .entry-title,
-.single-new .entry-title,
-.single-download .entry-title,
-.single-activity .entry-title {
+.single-new .entry-title {
   font-family: 'Lato',sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.1em;
   text-transform: uppercase;
 }
-.single-garden .entry-subtitle,
-.single-new .entry-subtitle,
-.single-download .entry-subtitle,
-.single-activity .entry-subtitle {
-  font: 700 14px sans-serif;
+.single-new .entry-subtitle {
+  font: 700 14px "Lato", sans-serif;
   text-transform: uppercase;
   text-decoration: underline;
   margin-top: 0;
   margin-bottom: 14px;
 }
-.single-garden .entry-subtitle:before, .single-garden .entry-subtitle:after,
-.single-new .entry-subtitle:before,
-.single-new .entry-subtitle:after,
-.single-download .entry-subtitle:before,
-.single-download .entry-subtitle:after,
-.single-activity .entry-subtitle:before,
-.single-activity .entry-subtitle:after {
+.single-new .entry-subtitle:before, .single-new .entry-subtitle:after {
   content: '·';
 }
-.single-garden .entry-content,
-.single-new .entry-content,
-.single-download .entry-content,
-.single-activity .entry-content {
+.single-new .entry-content {
   margin-bottom: 9px;
 }
-.single-garden .entry-footer,
-.single-new .entry-footer,
-.single-download .entry-footer,
-.single-activity .entry-footer {
+.single-new .entry-footer {
   margin-top: 20px;
 }
-
-.single-garden dl.entry-meta dd {
-  margin-bottom: 9px;
-}
-.single-garden dl.entry-meta .garden-address {
-  display: block;
-}
-.single-garden dl.entry-meta .garden-district {
-  border: 1px solid;
-  padding: 0 3px;
-}
-.single-garden dl.entry-meta p {
-  margin: 0;
-}
-.single-garden .equipment {
-  text-align: center;
-  vertical-align: top;
-  width: 120px;
-  margin-bottom: 9px;
-}
-.single-garden .equipment-label {
-  margin-top: 5px;
-  line-height: 1.1em;
-  text-transform: uppercase;
-}
-
-.single-new .entry-meta,
-.single-download .entry-meta,
-.single-activity .entry-meta {
+.single-new .entry-meta {
   margin-bottom: 1em;
 }
-.single-new .entry-meta a,
-.single-download .entry-meta a,
-.single-activity .entry-meta a {
+.single-new .entry-meta a {
   font-weight: 700;
 }
-.single-new .entry-meta .updated-on,
-.single-download .entry-meta .updated-on,
-.single-activity .entry-meta .updated-on {
+.single-new .entry-meta .updated-on {
   font-style: italic;
-}
-
-.single-download .download-file {
-  margin-bottom: 1em;
-  text-align: center;
-}
-.single-download .download-file a {
-  display: inline-block;
-  background-color: rgba(33, 64, 63, 0.6);
-  color: #fff;
-  padding: 40px 30px;
-  border-radius: 55px 55px 55px 55px;
-}
-.single-download .download-file a:hover {
-  background-color: #21403f;
-}
-
-.single-activity .actividad #map {
-  height: 300px;
-  margin-bottom: 1em;
-}
-.single-activity .actividad-org-i {
-  height: 26px;
-  width: auto;
-  vertical-align: bottom;
 }
 
 /* ==========================================================================
@@ -397,7 +329,6 @@ object {
 }
 .carousel-caption-inner h3 {
   font-size: 21px;
-  font-weight: normal;
   text-transform: uppercase;
 }
 .carousel-caption-inner h3:before, .carousel-caption-inner h3:after {
@@ -442,7 +373,7 @@ object {
    ========================================================================== */
 body.home h2,
 body.page-template-page-map h2 {
-  font: 700 16px sans-serif;
+  font: 700 16px "Lato", sans-serif;
   text-transform: uppercase;
   text-decoration: underline;
   margin-top: 14px;
@@ -455,7 +386,7 @@ body.page-template-page-map h2:after {
 }
 
 body.page-template-page-blog h2 {
-  font: 700 16px sans-serif;
+  font: 700 16px "Lato", sans-serif;
   text-transform: uppercase;
   text-decoration: underline;
   margin-top: 0;
@@ -466,7 +397,7 @@ body.page-template-page-blog h2:before, body.page-template-page-blog h2:after {
 }
 
 body.page-template-default h1 {
-  font: 700 16px sans-serif;
+  font: 700 16px "Lato", sans-serif;
   text-transform: uppercase;
   text-decoration: underline;
   margin-top: 14px;
@@ -476,7 +407,7 @@ body.page-template-default h1:before, body.page-template-default h1:after {
   content: '·';
 }
 body.page-template-default h2 {
-  font: 700 14px sans-serif;
+  font: 700 14px "Lato", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   margin-top: 14px;
@@ -556,7 +487,7 @@ body.page-template-page-map .map .map-file {
 
 body.search h1,
 body.post-type-archive h1 {
-  font: 700 16px sans-serif;
+  font: 700 16px "Lato", sans-serif;
   text-transform: uppercase;
   text-decoration: underline;
   margin-top: 0px;
@@ -708,7 +639,7 @@ body.page-template-page-gardens .garden-filters {
 }
 body.search .garden-filter-tit,
 body.page-template-page-gardens .garden-filter-tit {
-  font: 700 16px sans-serif;
+  font: 700 16px "Lato", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   margin-top: 0;
@@ -758,7 +689,7 @@ body.page-template-page-faqs .subpage {
   padding-top: 20px;
 }
 body.page-template-page-faqs h1.parent-tit {
-  font: 700 16px sans-serif;
+  font: 700 16px "Lato", sans-serif;
   text-transform: uppercase;
   text-decoration: underline;
   margin-top: 0;
@@ -768,7 +699,7 @@ body.page-template-page-faqs h1.parent-tit:before, body.page-template-page-faqs 
   content: '·';
 }
 body.page-template-page-faqs h2.child-tit {
-  font: 700 14px sans-serif;
+  font: 700 14px "Lato", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   margin-top: 0;

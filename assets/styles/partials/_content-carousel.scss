@@ -8,7 +8,6 @@
 	font-size: $font-size-large;
 	h3 {
 		font-size: 21px;
-		font-weight: normal;
 		text-transform: uppercase;
 		&:before, &:after { content: '·'; }
 	}
