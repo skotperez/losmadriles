@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: rhuertos 0.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2017-11-28 14:29+0100\n"
-"PO-Revision-Date: 2017-11-28 14:33+0100\n"
+"POT-Creation-Date: 2018-01-03 10:17+0100\n"
+"PO-Revision-Date: 2018-01-03 10:21+0100\n"
 "Last-Translator: Alfonso Sánchez Uzábal <skotperez@voragine.net>\n"
 "Language-Team: Montera34\n"
 "Language: es_ES\n"
@@ -131,18 +131,6 @@ msgstr "Comentarios siguientes"
 msgid "Comments are closed."
 msgstr "Los comentarios están cerrados"
 
-#: content-activity.php:32 content-single-activity.php:39
-msgid "See content for details"
-msgstr "Más información en el contenido"
-
-#: content-garden-filters.php:10
-msgid "Districts"
-msgstr "Distritos"
-
-#: content-garden-filters.php:22
-msgid "All"
-msgstr "Todo"
-
 #: content-none.php:13
 msgid "Nothing Found"
 msgstr "Nada encontrado"
@@ -165,13 +153,12 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: content-page.php:27 content-single.php:20 content.php:22
+#: content-page.php:30 content-single.php:20 content.php:22
 msgid "Pages:"
 msgstr "Páginas:"
 
-#: content-page.php:35 content-search.php:53 content-single-activity.php:65
-#: content-single-download.php:38 content-single-garden.php:129
-#: content-single-new.php:22 content-single.php:58 content.php:55
+#: content-page.php:38 content-search.php:53 content-single-new.php:22
+#: content-single.php:58 content.php:55
 msgid "Edit"
 msgstr "Editar"
 
@@ -203,64 +190,6 @@ msgstr "1 comentario"
 msgid "% Comments"
 msgstr "% comentarios"
 
-#: content-single-activity.php:50
-#, php-format
-msgid "Organizer: %s"
-msgstr "Organizador: %s"
-
-#: content-single-garden.php:82
-msgid "Address"
-msgstr "Dirección"
-
-#: content-single-garden.php:83
-msgid "Email"
-msgstr "Email de contacto"
-
-#: content-single-garden.php:84
-msgid "Website"
-msgstr "Sitio web"
-
-#: content-single-garden.php:85
-msgid "Begin data"
-msgstr "Fecha de inicio"
-
-#: content-single-garden.php:86
-msgid "Area"
-msgstr "Área"
-
-#: content-single-garden.php:89
-msgid "Governance"
-msgstr "Modelo de gestión"
-
-#: content-single-garden.php:90
-msgid "Open time"
-msgstr "Días y horas de apertura"
-
-#: content-single-garden.php:91
-msgid "Participants"
-msgstr "Número de participantes"
-
-#: content-single-garden.php:92
-msgid "People in kernel group"
-msgstr "Número de integrantes del grupo motor"
-
-#: content-single-garden.php:93
-msgid "Collaborators"
-msgstr "Entidades que participan y colaboran"
-
-#: content-single-garden.php:96
-msgid "Equipment"
-msgstr "Equipamiento"
-
-#: content-single-garden.php:108
-msgid "Location"
-msgstr "Localización"
-
-#: content-single-garden.php:128
-#, php-format
-msgid "Data collected on %s"
-msgstr "Datos recogidos el %s"
-
 #: content-single.php:37
 #, php-format
 msgid ""
@@ -291,22 +220,9 @@ msgstr ""
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Continuar leyendo <span class=\"meta-nav\">&rarr;</span>"
 
-#: footer.php:20 footer.php:67 header.php:55
+#: footer.php:20 header.php:43
 msgid "Show/hide menu"
 msgstr "Mostrar/ocultar el menú"
-
-#: footer.php:25
-msgid "More sites about urban gardens in Madrid"
-msgstr "Otros sitios web sobre huertos de Madrid"
-
-#: footer.php:50
-msgid "Logo of the Program for urban community gardens in Madrid"
-msgstr ""
-"Logotipo del Programa municipal de huertos urbanos comunitarios de Madrid"
-
-#: footer.php:62
-msgid "Madrid City Council"
-msgstr "Ayuntamiento de Madrid"
 
 #: front-page.php:38
 msgid "Last publications"
@@ -320,9 +236,9 @@ msgstr "Últimos huertos"
 msgid "Map of community gardens in Madrid"
 msgstr "Mapa de los huertos comunitarios de Madrid"
 
-#: header.php:45
-msgid "Search gardens"
-msgstr "Buscar huertos"
+#: header.php:61 lib/inc/template-tags.php:161
+msgid "Search"
+msgstr "Buscar"
 
 #: lib/class-tgm-plugin-activation.php:333
 msgid "Install Required Plugins"
@@ -621,23 +537,23 @@ msgstr "actualizado el %s"
 msgid "by %s"
 msgstr "por %s"
 
-#: lib/inc/template-tags.php:161
-msgid "Search"
-msgstr "Buscar"
+#: lib/inc/template-tags.php:163
+msgid "Search: "
+msgstr "Buscar:"
 
-#: lib/inc/template-tags.php:165
+#: lib/inc/template-tags.php:167
 msgid "Search results: "
 msgstr "Resultados de la búsqueda:"
 
-#: lib/inc/template-tags.php:205
+#: lib/inc/template-tags.php:210
 msgid "Previous"
 msgstr "Previo"
 
-#: lib/inc/template-tags.php:209
+#: lib/inc/template-tags.php:214
 msgid "Next"
 msgstr "Siguiente"
 
-#: lib/inc/template-tags.php:269
+#: lib/inc/template-tags.php:275
 #, php-format
 msgid "Content updated on %s"
 msgstr "Contenido actualizado el %s"
@@ -649,10 +565,6 @@ msgstr "Menú de cabecera"
 #: lib/init.php:54
 msgid "Footer Menu"
 msgstr "Menú del pie de página"
-
-#: lib/init.php:55
-msgid "Credits Menu"
-msgstr "Menú de la barra de créditos"
 
 #: lib/theme-functions.php:48
 msgid "Icon 36px"
@@ -677,14 +589,6 @@ msgstr "Área de widgets del pie de página"
 #: lib/theme-functions.php:63
 msgid "Add some content to the footer, under the menu."
 msgstr "Añadir contenido al pie de página, debajo del menú."
-
-#: lib/theme-functions.php:71
-msgid "Credits Widget Area"
-msgstr "Widgets del área de créditos"
-
-#: lib/theme-functions.php:73
-msgid "dd two widget for the credit area in the footer"
-msgstr ""
 
 #: search.php:16
 #, php-format
@@ -714,6 +618,80 @@ msgstr "Últimas descargas"
 #: templates/page-blog.php:86
 msgid "See more downloads"
 msgstr "Ver más descargas"
+
+#: templates/page-map.php:31
+msgid "Produced maps"
+msgstr "Mapas realizados"
+
+#~ msgid "See content for details"
+#~ msgstr "Más información en el contenido"
+
+#~ msgid "Districts"
+#~ msgstr "Distritos"
+
+#~ msgid "All"
+#~ msgstr "Todo"
+
+#~ msgid "Organizer: %s"
+#~ msgstr "Organizador: %s"
+
+#~ msgid "Address"
+#~ msgstr "Dirección"
+
+#~ msgid "Email"
+#~ msgstr "Email de contacto"
+
+#~ msgid "Website"
+#~ msgstr "Sitio web"
+
+#~ msgid "Begin data"
+#~ msgstr "Fecha de inicio"
+
+#~ msgid "Area"
+#~ msgstr "Área"
+
+#~ msgid "Governance"
+#~ msgstr "Modelo de gestión"
+
+#~ msgid "Open time"
+#~ msgstr "Días y horas de apertura"
+
+#~ msgid "Participants"
+#~ msgstr "Número de participantes"
+
+#~ msgid "People in kernel group"
+#~ msgstr "Número de integrantes del grupo motor"
+
+#~ msgid "Collaborators"
+#~ msgstr "Entidades que participan y colaboran"
+
+#~ msgid "Equipment"
+#~ msgstr "Equipamiento"
+
+#~ msgid "Location"
+#~ msgstr "Localización"
+
+#~ msgid "Data collected on %s"
+#~ msgstr "Datos recogidos el %s"
+
+#~ msgid "More sites about urban gardens in Madrid"
+#~ msgstr "Otros sitios web sobre huertos de Madrid"
+
+#~ msgid "Logo of the Program for urban community gardens in Madrid"
+#~ msgstr ""
+#~ "Logotipo del Programa municipal de huertos urbanos comunitarios de Madrid"
+
+#~ msgid "Madrid City Council"
+#~ msgstr "Ayuntamiento de Madrid"
+
+#~ msgid "Search gardens"
+#~ msgstr "Buscar huertos"
+
+#~ msgid "Credits Menu"
+#~ msgstr "Menú de la barra de créditos"
+
+#~ msgid "Credits Widget Area"
+#~ msgstr "Widgets del área de créditos"
 
 #~ msgid "Activities"
 #~ msgstr "Actividades"
