@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: rhuertos 0.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2018-02-02 18:26+0100\n"
-"PO-Revision-Date: 2018-02-02 18:30+0100\n"
+"POT-Creation-Date: 2018-02-02 18:50+0100\n"
+"PO-Revision-Date: 2018-02-02 18:51+0100\n"
 "Last-Translator: Alfonso Sánchez Uzábal <skotperez@voragine.net>\n"
 "Language-Team: Montera34\n"
 "Language: es_ES\n"
@@ -232,9 +232,9 @@ msgstr "Mostrar/ocultar el menú"
 msgid "Last publications"
 msgstr "Últimas publicaciones"
 
-#: front-page.php:58 templates/page-map.php:31
-msgid "Produced maps"
-msgstr "Mapas realizados"
+#: front-page.php:58
+msgid "Last produced maps"
+msgstr "Últimos mapas realizados"
 
 #: header.php:61 lib/inc/template-tags.php:161
 msgid "Search"
@@ -618,6 +618,10 @@ msgstr "Últimas descargas"
 #: templates/page-blog.php:86
 msgid "See more downloads"
 msgstr "Ver más descargas"
+
+#: templates/page-map.php:31
+msgid "Produced maps"
+msgstr "Mapas realizados"
 
 #~ msgid "Last gardens"
 #~ msgstr "Últimos huertos"

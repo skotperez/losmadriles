@@ -55,7 +55,7 @@ get_header(); ?>
 	?>
 
 		<section id="maps" class="block container">
-			<header class="row"><h2 class="col-sm-12"><?php _e('Produced maps','_mbbasetheme') ?></h2></header>
+			<header class="row"><h2 class="col-sm-12"><?php _e('Last produced maps','_mbbasetheme') ?></h2></header>
 			<div class="row">
 				<?php
 				$count = 0;
