@@ -205,11 +205,11 @@ function _mbbasetheme_get_carousel($post_id) {
 	if ( $controls == 1 ) {
 		$controls_out = '
 			<!-- Controls -->
-			<a class="left carousel-control" href="#carousel-'.$carousel['post_slug'].'" role="button" data-slide="prev">
+			<a class="left carousel-control" href="#carousel-'.$carousel['post_name'].'" role="button" data-slide="prev">
 				<span class="icon-prev" aria-hidden="true"></span>
 				<span class="sr-only">'._('Previous','_mbbasetheme').'</span>
 			</a>
-			<a class="right carousel-control" href="#carousel-'.$carousel['post_slug'].'" role="button" data-slide="next">
+			<a class="right carousel-control" href="#carousel-'.$carousel['post_name'].'" role="button" data-slide="next">
 				<span class="icon-next" aria-hidden="true"></span>
 				<span class="sr-only">'.__('Next','_mbbasetheme').'</span>
 			</a>
@@ -238,7 +238,7 @@ function _mbbasetheme_get_carousel($post_id) {
 			$slide_style = ' style="height: '.$carousel_h.'px; background-image: url('.$slide_img_src[0].'); background-repeat: no-repeat; background-size: cover; background-position: center center;"';
 		} else { $slide_img = ""; $slide_style = ' style="height: '.$carousel_h.'px; background-color: '.$slide_bgcolor.';"'; }
 		// indicators
-		$indicators_out .= ( $indicators == 1 ) ? '<li data-target="#carousel-'.$carousel['post_slug'].'" data-slide-to="'.$count.'" class="'.$active_class.'"></li>' : '';
+		$indicators_out .= ( $indicators == 1 ) ? '<li data-target="#carousel-'.$carousel['post_name'].'" data-slide-to="'.$count.'" class="'.$active_class.'"></li>' : '';
 		// slides
 		$slides_out .= '
 			<div class="item'.$active_class.'"'.$slide_style.'>
@@ -256,7 +256,7 @@ function _mbbasetheme_get_carousel($post_id) {
 	$slides_out .= '</div>';
 
 	// output
-	echo '<div id="carousel-'.$carousel['post_slug'].'" class="carousel slide" data-ride="carousel" data-interval="'.$interval_out.'" data-pause="hover" data-wrap="true" data-keyboard="true">'.$indicators_out . $slides_out . $controls_out.'</div>';
+	echo '<div id="carousel-'.$carousel['post_name'].'" class="carousel slide" data-ride="carousel" data-interval="'.$interval_out.'" data-pause="hover" data-wrap="true" data-keyboard="true">'.$indicators_out . $slides_out . $controls_out.'</div>';
 
 }
 endif;

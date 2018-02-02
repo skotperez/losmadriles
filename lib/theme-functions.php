@@ -166,6 +166,21 @@ function mb_scripts() {
 		wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.min.js', array('jquery'), NULL, true );
 		wp_enqueue_script( 'actual-js', get_template_directory_uri() . '/assets/jquery.actual/jquery.actual.min.js', array('jquery'), NULL, true );
 	}
+	if ( is_page_template('templates/page-map.php') ) {
+		wp_enqueue_script( 'lightbox-js', get_template_directory_uri() . '/assets/lightbox/js/lightbox.min.js', array('jquery'), NULL, true );
+//		wp_enqueue_script( 'lightbox-opt', get_template_directory_uri() . '/assets/js/source/lightbox.opt.js', array('lightbox-js'), NULL, true );
+		wp_enqueue_style( 'lightbox-css', get_template_directory_uri().'/assets/lightbox/css/lightbox.min.css',array('bootstrap-css') );
+		}
+}
+
+add_action('wp_footer', 'mb_lightbox_opt',100);
+function mb_lightbox_opt() {
+	echo "
+	<script>
+	 	lightbox.option({
+			'fitImagesInViewport': false
+		});
+	</script>";
 }
 /**
  * Remove Query Strings From Static Resources
