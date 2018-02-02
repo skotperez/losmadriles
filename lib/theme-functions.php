@@ -168,7 +168,6 @@ function mb_scripts() {
 	}
 	if ( is_page_template('templates/page-map.php') ) {
 		wp_enqueue_script( 'lightbox-js', get_template_directory_uri() . '/assets/lightbox/js/lightbox.min.js', array('jquery'), NULL, true );
-//		wp_enqueue_script( 'lightbox-opt', get_template_directory_uri() . '/assets/js/source/lightbox.opt.js', array('lightbox-js'), NULL, true );
 		wp_enqueue_style( 'lightbox-css', get_template_directory_uri().'/assets/lightbox/css/lightbox.min.css',array('bootstrap-css') );
 		}
 }

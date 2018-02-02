@@ -2,17 +2,6 @@
    Home Page Template
    ========================================================================== */
 
-body.home,
-body.page-template-page-map {
-	h2 {
-		@include sec-tit(16px,underline,14px,14px);
-	}
-}
-body.page-template-page-blog {
-	h2 {
-		@include sec-tit(16px,underline,0,14px);
-	}
-}
 body.page-template-default {
 	h1 {
 		@include sec-tit(16px,underline,14px,14px);
@@ -59,7 +48,18 @@ body.page-template-default {
 		p,ul,ol,dl,blockquote { text-align: left; }
 	}
 }
+
+body.page-template-page-blog {
+	h2 {
+		@include sec-tit(16px,underline,0,14px);
+	}
+}
+
+body.home,
 body.page-template-page-map {
+	h2 {
+		@include sec-tit(16px,underline,14px,14px);
+	}
 	.map {
 		margin-bottom: 28px;
 		.map-img {
@@ -91,6 +91,16 @@ body.page-template-page-map {
 		.map-file {
 			margin-top: 14px;
 			text-align: center;
+			h4 {
+				font-size: $font-base-size;
+				font-weight: normal;
+				text-transform: uppercase;
+			}
+			.list-inline {
+				li {
+				padding-right: 10px;
+				}
+			}
 		}
 	}
 }

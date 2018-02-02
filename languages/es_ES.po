@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: rhuertos 0.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2018-01-03 10:17+0100\n"
-"PO-Revision-Date: 2018-01-03 10:21+0100\n"
+"POT-Creation-Date: 2018-02-02 18:26+0100\n"
+"PO-Revision-Date: 2018-02-02 18:30+0100\n"
 "Last-Translator: Alfonso Sánchez Uzábal <skotperez@voragine.net>\n"
 "Language-Team: Montera34\n"
 "Language: es_ES\n"
@@ -131,6 +131,10 @@ msgstr "Comentarios siguientes"
 msgid "Comments are closed."
 msgstr "Los comentarios están cerrados"
 
+#: content-map.php:26
+msgid "Downloads"
+msgstr "Descargas"
+
 #: content-none.php:13
 msgid "Nothing Found"
 msgstr "Nada encontrado"
@@ -228,13 +232,9 @@ msgstr "Mostrar/ocultar el menú"
 msgid "Last publications"
 msgstr "Últimas publicaciones"
 
-#: front-page.php:58
-msgid "Last gardens"
-msgstr "Últimos huertos"
-
-#: front-page.php:71
-msgid "Map of community gardens in Madrid"
-msgstr "Mapa de los huertos comunitarios de Madrid"
+#: front-page.php:58 templates/page-map.php:31
+msgid "Produced maps"
+msgstr "Mapas realizados"
 
 #: header.php:61 lib/inc/template-tags.php:161
 msgid "Search"
@@ -619,9 +619,11 @@ msgstr "Últimas descargas"
 msgid "See more downloads"
 msgstr "Ver más descargas"
 
-#: templates/page-map.php:31
-msgid "Produced maps"
-msgstr "Mapas realizados"
+#~ msgid "Last gardens"
+#~ msgstr "Últimos huertos"
+
+#~ msgid "Map of community gardens in Madrid"
+#~ msgstr "Mapa de los huertos comunitarios de Madrid"
 
 #~ msgid "See content for details"
 #~ msgstr "Más información en el contenido"
@@ -698,9 +700,6 @@ msgstr "Mapas realizados"
 
 #~ msgid "News"
 #~ msgstr "Noticias"
-
-#~ msgid "Downloads"
-#~ msgstr "Descargas"
 
 #~ msgid "Last published gardens"
 #~ msgstr "Últimos huertos incorporados"
