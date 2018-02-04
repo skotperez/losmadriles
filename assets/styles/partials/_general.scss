@@ -30,8 +30,13 @@
 	.row {
 		padding: 10px 0;
 	}
-	background-color: $bargd-bg;
 	color: $bargd-fg;
+	background: {
+		repeat: repeat;
+		position: top left;
+		image: url(assets/images/bg.pattern.png);
+		color: $bargd-bg;
+	}
 }
 
 /* ==========================================================================

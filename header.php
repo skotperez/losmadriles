@@ -36,7 +36,7 @@
 				</div>
 			</div>
 		</div>
-		<nav id="pre-menu" class="navbar navbar-default" role="navigation">
+		<nav id="pre-menu" class="navbar navbar-inverse" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#pre-menu-collapse">
