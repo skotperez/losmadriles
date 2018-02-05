@@ -456,28 +456,8 @@ body.home .map,
 body.page-template-page-map .map {
   margin-bottom: 28px;
 }
-body.home .map .map-img,
-body.page-template-page-map .map .map-img {
-  width: 210px;
-  height: 210px;
-  border: 3px solid #21403f;
-  border-radius: 131px;
-  -webkit-border-radius: 131px;
-  -moz-border-radius: 131px;
-  margin: 0 auto;
-}
-body.home .map .map-img img,
-body.page-template-page-map .map .map-img img {
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-body.home .map .map-img:hover,
-body.page-template-page-map .map .map-img:hover {
-  border: 3px solid #e5dfa9;
-}
 body.home .map .map-heading,
 body.page-template-page-map .map .map-heading {
-  text-align: center;
   margin-top: 14px;
   margin-bottom: 14px;
 }
@@ -495,7 +475,6 @@ body.page-template-page-map .map .map-heading .map-tit {
 body.home .map .map-file,
 body.page-template-page-map .map .map-file {
   margin-top: 14px;
-  text-align: center;
 }
 body.home .map .map-file h4,
 body.page-template-page-map .map .map-file h4 {

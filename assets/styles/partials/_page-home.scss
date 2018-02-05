@@ -62,24 +62,8 @@ body.page-template-page-map {
 	}
 	.map {
 		margin-bottom: 28px;
-		.map-img {
-			width: 210px;
-			height: 210px;
-			border: 3px solid $brand-primary;
-			border-radius: 131px;
-			-webkit-border-radius: 131px;
-			-moz-border-radius: 131px;
-			img {
-				opacity: 0;
-				filter: alpha(opacity=0);	
-			}
-			margin: 0 auto;
-			&:hover {
-				border: 3px solid $bargl-bg;
-			}
-		}
 		.map-heading {
-			text-align: center;
+			//text-align: center;
 			.map-tit, .map-date {
 				font: 700 16px 'Lato',sans-serif;
 				text-transform: uppercase;
@@ -95,7 +79,6 @@ body.page-template-page-map {
 		}
 		.map-file {
 			margin-top: 14px;
-			text-align: center;
 			h4 {
 				font-size: $font-base-size;
 				font-weight: normal;
