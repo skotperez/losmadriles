@@ -44,6 +44,23 @@ get_header(); ?>
 		</section><!-- #news -->
 	<?php endif;
 
+	// THIS PAGE CONTENT
+	////
+	while ( have_posts() ) : the_post();
+	//	$the_content = get_the_content();
+		if ( get_the_content() != '' ) {
+	?>
+		<section class="block container">
+			<div class="row">
+				<div class="col-sm-12">
+					<?php the_content(); ?>
+				</div>
+			</div>
+		</section>
+
+	<?php 	}
+	endwhile; // end of the loop. 
+
 	// MAPS
 	////
 	$args = array(
@@ -70,23 +87,7 @@ get_header(); ?>
 			</div>
 		</section><!-- #gardens -->
 
-	<?php endif;
-
-	// THIS PAGE CONTENT
-	while ( have_posts() ) : the_post();
-	//	$the_content = get_the_content();
-		if ( get_the_content() != '' ) {
-	?>
-		<section class="block container">
-			<div class="row">
-				<div class="col-sm-12">
-					<?php the_content(); ?>
-				</div>
-			</div>
-		</section>
-
-	<?php 	}
-	endwhile; // end of the loop. ?>
+	<?php endif; ?>
 
 </main><!-- #main -->
 

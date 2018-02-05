@@ -63,14 +63,19 @@ body.page-template-page-map {
 	.map {
 		margin-bottom: 28px;
 		.map-img {
-			width: 262px;
-			height: 262px;
+			width: 210px;
+			height: 210px;
+			border: 3px solid $brand-primary;
 			border-radius: 131px;
 			-webkit-border-radius: 131px;
 			-moz-border-radius: 131px;
 			img {
 				opacity: 0;
 				filter: alpha(opacity=0);	
+			}
+			margin: 0 auto;
+			&:hover {
+				border: 3px solid $bargl-bg;
 			}
 		}
 		.map-heading {
