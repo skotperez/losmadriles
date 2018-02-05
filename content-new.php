@@ -11,6 +11,8 @@ if ( has_post_thumbnail() ) {
 $loop_desc = get_the_excerpt();
 $loop_tit = get_the_title();
 $loop_date = get_the_time('d\/m\/Y');
+$loop_place = get_post_meta($post->ID,'_place',true);
+$loop_place_out = ( $loop_place != '' ) ? '<div class="'.$loop_prefix.'-place"><strong>'.$loop_place.'</strong></div>' : '';
 ?>
 
 <article class="<?php echo $loop_classes; ?>">
@@ -19,6 +21,7 @@ $loop_date = get_the_time('d\/m\/Y');
 		<header class="<?php echo $loop_prefix; ?>-heading">
 			<a href="<?php echo $loop_perma ?>"><h3 class="<?php echo $loop_prefix; ?>-tit"><?php echo $loop_tit ?></h2></a>
 			<span class="<?php echo $loop_prefix; ?>-date"><?php echo $loop_date ?></span>
+			<?php echo $loop_place_out; ?>
 		</header>
 		<div class="<?php echo $loop_prefix; ?>-desc">
 			<?php echo $loop_desc; ?>

@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: rhuertos 0.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2018-02-02 18:50+0100\n"
-"PO-Revision-Date: 2018-02-02 18:51+0100\n"
+"POT-Creation-Date: 2018-02-05 15:02+0100\n"
+"PO-Revision-Date: 2018-02-05 15:02+0100\n"
 "Last-Translator: Alfonso Sánchez Uzábal <skotperez@voragine.net>\n"
 "Language-Team: Montera34\n"
 "Language: es_ES\n"
@@ -161,7 +161,7 @@ msgstr ""
 msgid "Pages:"
 msgstr "Páginas:"
 
-#: content-page.php:38 content-search.php:53 content-single-new.php:22
+#: content-page.php:38 content-search.php:53 content-single-new.php:26
 #: content-single.php:58 content.php:55
 msgid "Edit"
 msgstr "Editar"
@@ -193,6 +193,10 @@ msgstr "1 comentario"
 #: content-search.php:50 content.php:52
 msgid "% Comments"
 msgstr "% comentarios"
+
+#: content-single-new.php:14
+msgid "Where: "
+msgstr "Dónde: "
 
 #: content-single.php:37
 #, php-format
@@ -622,6 +626,9 @@ msgstr "Ver más descargas"
 #: templates/page-map.php:31
 msgid "Produced maps"
 msgstr "Mapas realizados"
+
+#~ msgid "Place: "
+#~ msgstr "Lugar: "
 
 #~ msgid "Last gardens"
 #~ msgstr "Últimos huertos"

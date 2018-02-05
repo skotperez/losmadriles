@@ -10,6 +10,9 @@ if ( has_post_thumbnail() ) {
 	$loop_image = '<div class="col-md-4"><figure class="'.$loop_prefix.'-img">'.get_the_post_thumbnail($post->ID,$img_size,array('class' => 'img-responsive')).'</figure></div>';
 } else { $loop_image = ""; }
 
+$loop_place = get_post_meta($post->ID,'_place',true);
+$loop_place_out = ( $loop_place != '' ) ? '<li class="'.$loop_prefix.'-place">'.__('Where: ','_mbbasetheme').'<strong>'.$loop_place.'</strong></li>' : '';
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('container'); ?>>
@@ -17,7 +20,8 @@ if ( has_post_thumbnail() ) {
 		<?php the_title( '<h1 class="entry-title col-sm-12">', '</h1>' ); ?>
 		<div class="clearfix"></div>
 		<div class="col-sm-8 entry-meta">
-			<ul class="list-inline">
+			<ul class="list-unstyled">
+				<?php echo $loop_place_out; ?>
 				<li><?php _mbbasetheme_posted_on(); ?></li>
 				<li><?php edit_post_link( __( 'Edit', '_mbbasetheme' ), '<span class="edit-link">', '</span>' ); ?></li>
 			</ul>
