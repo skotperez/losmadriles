@@ -1,0 +1,12 @@
+/* ==========================================================================
+   Cookies Notice Plugin
+   ========================================================================== */
+
+.cn-set-cookie, .cn-more-info {
+	background-color: $brand-primary;
+	color: #fff;
+	padding: 5px;
+	&:hover {
+		background-color: $brand-primary-transparent;
+	}
+}

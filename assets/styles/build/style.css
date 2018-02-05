@@ -762,4 +762,16 @@ form input, form textarea {
   color: #fff;
 }
 
+/* ==========================================================================
+   Cookies Notice Plugin
+   ========================================================================== */
+.cn-set-cookie, .cn-more-info {
+  background-color: #21403f;
+  color: #fff;
+  padding: 5px;
+}
+.cn-set-cookie:hover, .cn-more-info:hover {
+  background-color: rgba(33, 64, 63, 0.6);
+}
+
 /*# sourceMappingURL=style.css.map */
